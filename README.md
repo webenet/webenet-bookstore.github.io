@@ -37,6 +37,10 @@ js/app.js                   Search, cart, favorites, covers, UI
 js/catalog.js               Catalog bundled for file:// use
 data/books.json             Readable source catalog
 assets/webenet-logo.webp    Brand logo (optimized, < 1 MB)
+assets/favicon.png          Square favicon master with book emblem
+assets/favicon-32.png       32x32 browser-tab icon
+assets/apple-touch-icon.png 180x180 iOS homescreen icon
+favicon.ico                 Multi-resolution browser-tab icon
 preview.png                 Preview of the local offline layout
 ```
 
@@ -58,3 +62,7 @@ Open Library's API is used for book metadata and third-party book covers. The im
 See `data/books.json` for the complete set of sourced items and links. WEBENET is not affiliated with those publishers or retailers.
 
 © 2026 WEBENET. Storefront demonstration.
+
+## Logo and favicon
+
+The header and footer display `assets/webenet-logo.webp`, while the browser tab uses the icon-sized open-book emblem in `favicon.ico` / `assets/favicon-32.png`. The HTML links include a query version to refresh browser favicon caches after uploading. Upload **all files and folders inside this ZIP**, not just `index.html`, to the root of the GitHub Pages repository. If the old tab icon remains, perform a hard refresh or open the page in a fresh private window.
